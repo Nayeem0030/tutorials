@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author:AshishJain
 
-aws ec2 run-instances --image-id $ami --count $count --instance-type $typ --key-name $key --security-group-ids $sg --subnet-id $subnet --region-ap-south-1
+aws ec2 run-instances --image-id $ami --count $count --instance-type $typ --key-name $key --security-group-ids $sg --subnet-id $subnet --region $region
 
 echo "$count EC2 instances have been successfully created. Please check management console"
